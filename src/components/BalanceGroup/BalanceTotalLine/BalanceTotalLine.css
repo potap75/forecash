@@ -1,0 +1,26 @@
+.balance-total-line {
+    width: 568;
+    height: 45;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.balance-total-label {
+    width: 230;
+    height: 45;
+    font-size: 36;
+    font-style: italic;
+    line-height: 100%;
+    color: black;
+  }
+
+  .balance-total-amount {
+    width: 230;
+    height: 45;
+    font-size: 36;
+    font-style: italic;
+    line-height: 100%;
+    color: black;
+  }

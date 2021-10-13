@@ -1,0 +1,27 @@
+.balance-bills-line {
+    width: 563;
+    height: 45;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.bills-label {
+    width: 230;
+    height: 45;
+    font-size: 36;
+    font-style: italic;
+    line-height: 100%;
+    color: black; 
+}
+
+.bills-amount {
+    width: 297; 
+    height: 45; 
+    font-size: 36;
+    font-style: italic;
+    line-height: 100%;
+    text-align: right;
+    color: black;
+}
