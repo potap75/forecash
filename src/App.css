@@ -1,22 +1,12 @@
 .dashboard {
-  width: 1440px; 
-  height: 1024px;
+  width: 100%; 
+  height: 100%;
   background-color: white; 
   position: relative;
 }  
 
-.app-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .today-label {
+  position: center;
   width: 735;
   height: 123;
   font-size: 2rem;
