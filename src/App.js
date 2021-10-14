@@ -10,8 +10,16 @@ function App() {
       <Header />
       <p className="today-label">You may spend today:</p>
       <TodayGroup />
-      <BalanceGroup />
-      <ForecastGraph />
+      <table>
+        <tr>
+          <td>
+            <BalanceGroup />
+          </td>
+          <td>
+            <ForecastGraph />
+          </td>
+        </tr>
+      </table>
     </div>
   );
 }

@@ -1,27 +1,11 @@
-.balance-scheduled-line {
-    width: 563;
-    height: 45;
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
 .scheduled-label {
-    width: 230;
-    height: 45;
     font-size: 36;
     font-style: italic;
-    line-height: 100%;
     color: black;
 }
 
 .scheduled-amount {
-    width: 297;
-    height: 45;
     font-size: 36;
     font-style: italic;
-    line-height: 100%;
-    text-align: right;
     color: black;
 }
