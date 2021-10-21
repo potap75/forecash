@@ -16,7 +16,7 @@ function App() {
           revenue: 150.0,
           bills: 60.0,
           scheduled: 40.0,
-          balance: 50.0,
+          total: 50.0,
         },
       forecast: "GraphPlaceholder",
     }
@@ -39,7 +39,7 @@ function App() {
               revenue={data[0].balance.revenue}
               scheduled={data[0].balance.scheduled}
               bills={data[0].balance.bills}
-              balance={data[0].balance.balance}
+              total={data[0].balance.total}
             />
           </td>
           <td>

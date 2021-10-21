@@ -1,10 +1,10 @@
 import React from "react";
 import "./BalanceTotalLine.css";
 
-const BalanceTotalLineAmount = () => {
+const BalanceTotalLineAmount = (props) => {
   return (
     <div>
-      <p className="total-amount">0.00</p>
+      <p className="total-amount">{props.amount}</p>
     </div>
   );
 };

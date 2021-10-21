@@ -40,7 +40,7 @@ const BalanceGroup = (props) => {
   <tr>
     <td><BalanceTotalLineLabel /></td>
     <td><BalanceTotalLineAmount
-    amount = {props.balance}
+    amount = {props.total}
     /></td>
   </tr>
 </table>

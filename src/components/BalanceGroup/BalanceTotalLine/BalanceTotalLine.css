@@ -1,14 +1,13 @@
-
 .total-label {
-    font-size: 36;
-    font-style: italic;
-    color: black;
-    align-items: left;
-  }
+  font-size: 36;
+  font-style: italic;
+  color: black;
+  align-items: left;
+}
 
-  .total-amount {
-    font-size: 36;
-    font-style: italic;
-    color: black;
-    align-items: right;
-  }
+.total-amount {
+  font-size: 36;
+  font-style: italic;
+  color: black;
+  align-items: right;
+}
