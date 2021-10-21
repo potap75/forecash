@@ -1,11 +1,12 @@
 import React from "react";
 import "./TodayGroup.css";
 
-const TodayGroup = () => {
+const TodayGroup = (props) => {
   return (
-    <div className="today-group">
+    <div className="today-group" >
+      <p className="today-date" >{props.todayDate}</p>
       <p className="today-currency">$</p>
-      <p className="today-amount">250</p>
+      <p className="today-amount" >{props.todayCash}</p>
     </div>
   );
 };

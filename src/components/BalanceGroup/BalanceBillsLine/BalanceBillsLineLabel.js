@@ -3,7 +3,7 @@ import "./BalanceBillsLine.css";
 
 const BalanceBillsLineLabel = () => {
     return (
-        <div className="balance-bills-line">
+        <div>
         <p className="bills-label">Bills</p>
     </div>
     )

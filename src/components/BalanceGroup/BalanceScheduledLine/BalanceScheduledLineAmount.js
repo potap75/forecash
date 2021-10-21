@@ -1,10 +1,10 @@
 import React from "react";
 import './BalanceScheduledLine.css'
 
-const BalanceScheduledLineAmount = () =>{
+const BalanceScheduledLineAmount = (props) =>{
     return (
         <div className="balance-scheduled-line">
-        <p className="scheduled-amount">0.00</p>
+        <p className="scheduled-amount">{props.amount}</p>
     </div>
     )
 }

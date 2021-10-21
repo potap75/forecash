@@ -1,10 +1,10 @@
 import React from "react";
 import "./BalanceRevenueLine.css";
 
-const BalanceRevenueLineAmount = () => {
+const BalanceRevenueLineAmount = (props) => {
   return (
-    <div className="balance-revenue-line">
-      <p className="revenue-amount">0.00</p>
+    <div>
+      <p className="revenue-amount">{props.amount}</p>
     </div>
   );
 };

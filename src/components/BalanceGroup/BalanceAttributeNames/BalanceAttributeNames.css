@@ -3,6 +3,7 @@ font-size: 36;
 font-weight: 700;
 line-height: 100%;
 color: black;
+align-items: left;
 }
 
 .items-column {
@@ -10,4 +11,5 @@ font-size: 36;
 font-weight: 700;
 line-height: 100%;
 color: black;
+align-items: right;
 }

@@ -3,7 +3,7 @@ import './BalanceScheduledLine.css'
 
 const BalanceScheduledLineLabel = () =>{
     return (
-        <div className="balance-scheduled-line">
+        <div>
         <p className="scheduled-label">Scheduled</p>
     </div>
     )

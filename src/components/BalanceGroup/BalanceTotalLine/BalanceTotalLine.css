@@ -1,12 +1,14 @@
 
-.balance-total-label {
+.total-label {
     font-size: 36;
     font-style: italic;
     color: black;
+    align-items: left;
   }
 
-  .balance-total-amount {
+  .total-amount {
     font-size: 36;
     font-style: italic;
     color: black;
+    align-items: right;
   }

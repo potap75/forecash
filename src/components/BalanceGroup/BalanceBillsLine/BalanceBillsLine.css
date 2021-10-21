@@ -1,8 +1,10 @@
 .bills-label {
+    margin: 0;
     font-size: 36;
     font-style: italic;
     line-height: 100%;
     color: black; 
+    align-items: left;
 }
 
 .bills-amount {
@@ -10,4 +12,5 @@
     font-style: italic;
     line-height: 100%;
     color: black;
+    align-items: right;
 }

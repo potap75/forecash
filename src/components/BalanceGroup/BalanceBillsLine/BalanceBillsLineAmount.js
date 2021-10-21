@@ -1,10 +1,10 @@
 import React from "react";
 import "./BalanceBillsLine.css";
 
-const BalanceBillsLineAmount = () => {
+const BalanceBillsLineAmount = (props) => {
     return (
-        <div className="balance-bills-line">
-        <p className="bills-amount">0.00</p>
+        <div>
+        <p className="bills-amount">{props.amount}</p>
     </div>
     )
 }

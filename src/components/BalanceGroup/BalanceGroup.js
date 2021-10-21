@@ -11,7 +11,7 @@ import BalanceTotalLineLabel from './BalanceTotalLine/BalanceTotalLineLabel';
 import BalanceTotalLineAmount from './BalanceTotalLine/BalanceTotalLineAmount';
 import './BalanceGroup.css';
 
-const BalanceGroup = () => {
+const BalanceGroup = (props) => {
     return (
 <div className="balance-group">
     <table>
@@ -21,19 +21,27 @@ const BalanceGroup = () => {
   </tr>
   <tr>
     <td><BalanceRevenueLineLabel /></td>
-    <td><BalanceRevenueLineAmount /></td>
+    <td><BalanceRevenueLineAmount 
+    amount = {props.revenue}
+    /></td>
   </tr>
   <tr>
     <td><BalanceScheduledLineLabel /></td>
-    <td><BalanceScheduledLineAmount /></td>
+    <td><BalanceScheduledLineAmount
+    amount = {props.scheduled}
+    /></td>
   </tr>
   <tr>
     <td><BalanceBillsLineLabel /></td>
-    <td><BalanceBillsLineAmount /></td>
+    <td><BalanceBillsLineAmount 
+    amount = {props.bills}
+    /></td>
   </tr>
   <tr>
     <td><BalanceTotalLineLabel /></td>
-    <td><BalanceTotalLineAmount /></td>
+    <td><BalanceTotalLineAmount
+    amount = {props.balance}
+    /></td>
   </tr>
 </table>
 </div>
