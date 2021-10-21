@@ -8,7 +8,7 @@ import BalanceGroup from "./components/BalanceGroup/BalanceGroup";
 function App() {
   const data = [
     {
-      date: "today",
+      date: "10/31/2021",
       currency: "$",
       dayCash: 10.0,
       balance: 

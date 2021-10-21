@@ -4,7 +4,7 @@ import "./TodayDate.css"
 const TodayDate = (props) => {
     return (
         <div>
-        <p className="today-label">{props.todayDate}</p>
+        <p className="today">{props.todayDate}</p>
         </div>
     )
 }

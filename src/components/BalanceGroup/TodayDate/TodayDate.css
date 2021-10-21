@@ -1,9 +1,9 @@
 
-.today-label {
+.today {
     
-    margin-left: 10px;
-    font-size: 36;
+    margin-left: 40px;
+    font-size: 50px;
     font-style: italic;
     line-height: 100%;
-    color: black; 
+    color: blue; 
 }
