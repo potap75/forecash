@@ -1,14 +1,16 @@
 import React from "react";
-import './ForecastGraph.css';
+import './Graph.css';
 
-const ForecastGraph = () =>{
+const Graph = (props) =>{
 
 return (
-<div className="forecast-graph">
+<div>
     <img className="graph1" src="public/graph1.png" alt="This is a graph"/>
+    forecastGraph={props.graph}
+
 </div>
 )
 
 }
 
-export default ForecastGraph; 
+export default Graph; 

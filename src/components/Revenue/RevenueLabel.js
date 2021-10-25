@@ -1,7 +1,7 @@
 import React from "react";
-import "./BalanceRevenueLine.css";
+import "./Revenue.css";
 
-const BalanceRevenueLineLabel = () => {
+const RevenueLabel = () => {
   return (
     <div>
       <p className="revenue-label">Revenue</p>
@@ -9,4 +9,4 @@ const BalanceRevenueLineLabel = () => {
   );
 };
 
-export default BalanceRevenueLineLabel;
+export default RevenueLabel;

@@ -1,7 +1,7 @@
 import React from "react";
-import "./BalanceTotalLine.css";
+import "./Total.css";
 
-const BalanceTotalLineLabel = () => {
+const TotalLabel = () => {
   return (
     <div>
       <p className="total-label">Balance</p>
@@ -9,4 +9,4 @@ const BalanceTotalLineLabel = () => {
   );
 };
 
-export default BalanceTotalLineLabel;
+export default TotalLabel;

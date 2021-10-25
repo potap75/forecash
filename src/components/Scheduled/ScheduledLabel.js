@@ -1,7 +1,7 @@
 import React from "react";
-import './BalanceScheduledLine.css'
+import './Scheduled.css'
 
-const BalanceScheduledLineLabel = () =>{
+const ScheduledLabel = () =>{
     return (
         <div>
         <p className="scheduled-label">Scheduled</p>
@@ -9,4 +9,4 @@ const BalanceScheduledLineLabel = () =>{
     )
 }
 
-export default BalanceScheduledLineLabel;
+export default ScheduledLabel;

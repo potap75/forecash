@@ -1,7 +1,7 @@
 import React from "react";
-import "./BalanceRevenueLine.css";
+import "./Revenue.css";
 
-const BalanceRevenueLineAmount = (props) => {
+const RevenueAmount = (props) => {
   return (
     <div>
       <p className="revenue-amount">{props.amount}</p>
@@ -9,4 +9,4 @@ const BalanceRevenueLineAmount = (props) => {
   );
 };
 
-export default BalanceRevenueLineAmount;
+export default RevenueAmount;
