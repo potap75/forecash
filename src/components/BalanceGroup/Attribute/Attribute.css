@@ -1,12 +1,14 @@
 .amount-column {
+padding: 5px 20px;
 font-size: 36;
 font-weight: 700;
 line-height: 100%;
 color: black;
-align-items: left;
+align-items: right;
 }
 
 .items-column {
+    padding: 5px 5px;
 font-size: 36;
 font-weight: 700;
 line-height: 100%;

@@ -4,7 +4,7 @@ import "./Revenue.css";
 const RevenueAmount = (props) => {
   return (
     <div>
-      <p className="revenue-amount">{props.amount}</p>
+      <p className="revenue-amount">{props.revenue}</p>
     </div>
   );
 };

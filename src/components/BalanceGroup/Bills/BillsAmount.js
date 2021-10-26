@@ -4,7 +4,7 @@ import "./Bills.css";
 const BillsAmount = (props) => {
   return (
     <div>
-      <p className="bills-amount">{props.amount}</p>
+      <p className="bills-amount">{props.bills}</p>
     </div>
   );
 };

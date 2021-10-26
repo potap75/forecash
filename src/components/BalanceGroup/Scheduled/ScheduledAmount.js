@@ -4,7 +4,7 @@ import './Scheduled.css'
 const ScheduledAmount = (props) =>{
     return (
         <div>
-        <p className="scheduled-amount">{props.amount}</p>
+        <p className="scheduled-amount">{props.scheduled}</p>
     </div>
     )
 }

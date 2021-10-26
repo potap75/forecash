@@ -4,7 +4,7 @@ import "./Total.css";
 const TotalAmount = (props) => {
   return (
     <div>
-      <p className="total-amount">{props.amount}</p>
+      <p className="total-amount">{props.total}</p>
     </div>
   );
 };

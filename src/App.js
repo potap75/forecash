@@ -1,52 +1,38 @@
+import React from "react";
 import Header from "./components/Header/Header";
-import Date from "./components/Date/Date";
-import Currency from "./components/Currency/Currency";
-import Cash from "./components/Cash/Cash";
-import AttributeName from "./components/Attribute/AttributeName"
-import AttributeAmount from "./components/Attribute/AttributeAmount"
-import RevenueLabel from "./components/Revenue/RevenueLabel";
-import RevenueAmount from "./components/Revenue/RevenueAmount";
-import BillsLabel from "./components/Bills/BillsLabel";
-import BillsAmount from "./components/Bills/BillsAmount";
-import ScheduledLabel from "./components/Scheduled/ScheduledLabel";
-import ScheduledAmount from "./components/Scheduled/ScheduledAmount";
-import TotalLabel from "./components/Total/TotalLabel";
-import TotalAmount from "./components/Total/TotalAmount"
+import TodayGroup from "./components/TodayGroup/TodayGroup";
+import BalanceGroup from "./components/BalanceGroup/BalanceGroup";
 import Graph from "./components/Graph/Graph";
-
-
 
 function App() {
   const data = [
-     {
+    {
+      today: 
+      {
         date: "10/31/2021",
         currency: "$",
-        cash: 10.0,
-        revenue: 150.0,
-        bills: 60.0,
-        scheduled: 40.0,
-        total: 50.0,
-        forecast: "GraphPlaceholder"
+        cash: 10.00,
+      },
+      balance: {
+        revenue: 150.00,
+        bills: 60.00,
+        scheduled: 40.00,
+        total: 50.00,
+        forecast: "GraphPlaceholder",
+      },
     },
   ];
   return (
-    <div className="dashboard">
-      <Header  />
-      <Date date = {data[0].date}/>
-      <Currency />
-      <Cash />
-      <AttributeName />
-      <AttributeAmount />
-      <RevenueLabel />
-      <RevenueAmount />
-      <BillsLabel />
-      <BillsAmount />
-      <ScheduledLabel />
-      <ScheduledAmount />
-      <TotalLabel />
-      <TotalAmount />
-      <Graph />
-      
+    <div>
+      <Header />
+      <TodayGroup
+      todayData = {data[0].today}
+      />
+      <BalanceGroup
+      balanceData = {data[0].balance}
+      />
+      <Graph 
+      graphData = {data[0].forecast}/>
     </div>
   );
 }

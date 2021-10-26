@@ -4,7 +4,7 @@ import "./Cash.css"
 const Cash = (props) => {
     return (
         <div>
-        <p>{props.cash}</p>
+        <p className="todayAmount">{props.cash}</p>
         </div>
     )
 }

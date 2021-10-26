@@ -1,4 +1,5 @@
 .total-label {
+  padding: 5px 5px;
   font-size: 36;
   font-style: italic;
   color: black;
@@ -6,6 +7,7 @@
 }
 
 .total-amount {
+  padding: 5px 20px;
   font-size: 36;
   font-style: italic;
   color: black;
