@@ -1,4 +1,3 @@
-import React from "react";
 import "./TodayGroup.css";
 import TodayDate from "./TodayDate/TodayDate";
 import Cash from "./Cash/Cash";
@@ -6,6 +5,7 @@ import Currency from "./Currency/Currency";
 
 
 const TodayGroup = (props) => {
+  
   return (
     <div>
       <table>
@@ -19,6 +19,11 @@ const TodayGroup = (props) => {
           <div>
         <TodayDate todayDate = {props.todayData.date} />
         </div>
+        <td>
+          <div>
+        
+        </div>
+          </td>
         </td>
         </tr>
         </table>

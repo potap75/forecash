@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AttributeName from "./Attribute/AttributeName";
 import AttributeAmount from "./Attribute/AttributeAmount";
 import RevenueLabel from "./Revenue/RevenueLabel";
@@ -12,6 +12,31 @@ import TotalAmount from "./Total/TotalAmount";
 import "./BalanceGroup.css";
 
 const BalanceGroup = (props) => {
+
+  const[revenue, setRevenue] = useState(props.balanceData.revenue);
+  const clickHandlerRevenue = (props) => {
+    setRevenue("200");
+    console.log("revenue");
+  }
+
+  const[bills, setBills] = useState(props.balanceData.bills);
+  const clickHandlerBills = (props) => {
+    setBills("80");
+    console.log("bills");
+  }
+
+  const[scheduled, setScheduled] = useState(props.balanceData.scheduled);
+  const clickHandlerScheduled = (props) => {
+    setScheduled("60");
+    console.log("scheduled");
+  }
+
+  const[total, setTotal] = useState(props.balanceData.total);
+  const clickHandlerTotal = (props) => {
+    setTotal("80");
+    console.log("total");
+  }
+
   return (
     <div className="balance-group">
       <table>
@@ -22,6 +47,9 @@ const BalanceGroup = (props) => {
           <td>
             <AttributeAmount />
           </td>
+          <td>
+            <h2 >Change Amount</h2>
+            </td>
           </tr>
           <tr>
           <td>
@@ -29,9 +57,12 @@ const BalanceGroup = (props) => {
           </td>
           <td>
             <RevenueAmount 
-            revenue = {props.balanceData.revenue}
+            revenue = {revenue}
             />
           </td>
+          <td>
+            <button onClick={clickHandlerRevenue}>Change Revenue</button>
+            </td>
           </tr>
           <tr>
           <td>
@@ -39,9 +70,12 @@ const BalanceGroup = (props) => {
           </td>
           <td>
             <BillsAmount 
-            bills = {props.balanceData.bills}
+            bills = {bills}
             />
           </td>
+          <td>
+            <button onClick={clickHandlerBills}>Change Bills</button>
+            </td>
           </tr>
           <tr>
           <td>
@@ -49,9 +83,12 @@ const BalanceGroup = (props) => {
           </td>
           <td>
             <ScheduledAmount 
-            scheduled = {props.balanceData.scheduled}
+            scheduled = {scheduled}
             />
           </td>
+          <td>
+            <button onClick={clickHandlerScheduled}>Change Scheduled</button>
+            </td>
           </tr>
           <tr>
           <td>
@@ -59,9 +96,12 @@ const BalanceGroup = (props) => {
           </td>
           <td>
             <TotalAmount 
-            total = {props.balanceData.total}
+            total = {total}
             />
           </td>
+          <td>
+            <button onClick={clickHandlerTotal}>Change Total</button>
+            </td>
         </tr>
       </table>
     </div>
